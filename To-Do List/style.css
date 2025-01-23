@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(54, 52, 52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 350px;
+  background-color: #676a74;
+  padding: 20px 20px 100px 20px;
+  /* margin-bottom: 100px; */
+  border-radius: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.output {
+  margin-top: 2em;
+}
+
+/* Javascript */
+.todo {
+  border-left: 4px solid rgb(61, 207, 78);
+  border-radius: 8px;
+  color: rgb(37, 36, 36);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  font-size: 1em;
+  background-color: #e5ebeb;
+  padding: 10px;
+}
+
+.delete {
+  color: darkgreen;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.delete:hover {
+  color: darkred;
+  transform: scale(1.2);
+}
+
+.message-container {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 15px;
+  transform: translateX(0);
+  visibility: hidden;
+  transition: transform 1.5s ease;
+}
+
+.success {
+  transform: translateX(50px);
+  background-color: rgb(23, 140, 23);
+  visibility: visible;
+  color: #fff;
+}
+
+.error {
+  transform: translateX(50px);
+  background-color: rgb(192, 36, 36);
+  visibility: visible;
+  color: #fff;
+}
